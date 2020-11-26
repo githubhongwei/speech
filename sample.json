@@ -1,0 +1,55 @@
+{
+  "Tasks": [
+    {
+      "SourcePath": "D:\\MigTest",
+      "TargetPath": "https://a830edad9050849387E18042320.sharepoint.com",
+      "TargetList": "Documents",
+      "TargetListRelativePath": "subfolder"
+    },
+    {
+      "SourcePath": "http://EXHB-1873",
+      "TargetPath": "https://a830edad9050849387E18042320.sharepoint.com",
+      "Items": {
+        "Lists": [
+          {
+            "SourceList": "versionList",
+            "TargetList": "NewVersionList"
+          }
+        ],
+        "SubSites": []
+      }
+    },
+    {
+      "SourcePath": "http://EXHB-1873",
+      "TargetPath": "https://a830edad9050849387E18042320.sharepoint.com",
+      "Items": {
+        "Lists": [
+          {
+            "SourceList": "listVersion2",
+            "TargetList": "ListVersion2"
+          },
+          {
+            "SourceList": "listVersion3",
+            "TargetList": "ListVersion3"
+          }
+        ],
+        "SubSites": [
+          {
+            "SourceSubSitePath": "subSite",
+            "TargetSubSitePath": "targetSubSite",
+            "Lists": [
+              {
+                "SourceList": "testSubListB",
+                "TargetList": "TargetSubList"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "SourcePath": "http://EXHB-1873/subsite2",
+      "TargetPath": "https://a830edad9050849387E18042320.sharepoint.com/targetSubSite2"
+    }
+  ]
+}
